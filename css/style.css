@@ -1,0 +1,566 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#background-body {
+    position: fixed;
+    z-index: -1000000000;
+    width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+h1{
+  text-align: center;
+  margin: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    box-shadow: 0px 3px 5px rgb(0,0,0,0.3);
+}
+
+#logo {
+    max-width: 180px;
+    width: 100%;
+    margin-right: 25px;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.2s;
+    margin-right: 25px;
+}
+header .navbar ul li a:hover {
+    background-image: linear-gradient(to right, #ff5e00, #FD00FF, #0008E9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    max-width: fit-content;
+}
+
+/* Nav Toggler */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar-toggler-icon{
+  width: 2.15em;
+  height: 2.15em;
+  filter: brightness(0%);
+}
+
+/* Main */
+
+.carousel-item h5, .carousel-item p {
+    text-shadow: 0px 0px 10px black;
+}
+
+main {
+    position: relative;
+    background-color: white;
+    width: 75%;
+    margin: auto;
+    box-shadow: 0px 3px 7px rgb(0,0,0,0.45);
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    border-radius: 0 0 15px 15px;
+    margin: 0px auto 50px auto;
+    padding-bottom: 1px;
+}
+
+.inicio {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+section h2 {
+    font-size: 46px;
+    margin: 0;
+    font-weight: 800;
+}
+section {
+  margin: 0 60px;
+}
+.inicio p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+}
+.inicio div {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 335px;
+    height: 100%;
+    margin-top: 40px;
+    gap: 40px;
+}
+.inicio img {
+    width: 100%;
+    max-width: 370px;
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sobre-nos h2 {
+    margin-bottom: 25px;
+}
+.sobre-nos div {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 335px;
+    height: 100%;
+    margin-top: 40px;
+}
+.sobre-nos img {
+    width: 100%;
+    max-width: 450px;
+}
+.sobre-nos p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    -webkit-text-stroke-width: 100%;
+}
+
+/* Compre Conosco */
+.banner_img{
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.compre_conosco_main form{
+  margin: 35px;
+}
+.compre_conosco_main form .form-control:focus{
+  box-shadow: 0 0 0 0.10rem rgba(13,110,253,.25);
+}
+.compre_conosco_main form textarea.form-control{
+  resize: none;
+  height: 100%;
+  max-height: 230px;
+  margin: 16px 0;
+}
+.compre_conosco_main form .button_submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.compre_conosco_main form .button_submit button {
+  background-color: #ff5e00;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 7px 15px;
+}
+.compre_conosco_main form .button_submit button:hover{
+  background-color: #ff5100;
+}
+
+/* Sobre nós */
+.sobrenos_section .card {
+  justify-content: center;
+}
+.sobrenos_section .card .row {
+  height: 100%;
+}
+.sobrenos_section .card .row .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.card img {
+  object-fit: cover;
+  height: 100%;
+}
+.card p {
+  text-align: left;
+}
+.sobrenos_section .card-group{
+  margin: 20px 0;
+}
+
+
+/* Botão Uiverse.io */
+.button {
+    position: relative;
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .button:active {
+    transform: scale(0.96);
+  }
+  
+  .button:before,
+  .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+  }
+  
+  .button:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  .button:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  /* Botão Compra */
+
+  .botao-compra {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: rgb(220, 8, 248);
+    color: ghostwhite;
+   }
+   .botao-compra a {
+    color: inherit;
+    text-decoration: none;
+   }
+   
+   .botao-compra span {
+    position: relative;
+    transition: color 0.4s;
+   }
+   
+   .botao-compra:hover span {
+    color: black;
+   }
+   
+   .botao-compra::before,
+   .botao-compra::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+   
+   .botao-compra::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .botao-compra:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+
+
+/* Botão Uiverse.io Sobre nós */
+
+/* From Uiverse.io by gharsh11032000 */ 
+.compreja_button{
+  text-decoration: none;
+}
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 20px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #FD00FF;
+  box-shadow: 0 0 0 2px #FD00FF;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: 50px auto;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #FD00FF;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #FD00FF;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px #FD00FF;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+   
+/* Comprar */
+
+.comprar div{
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 50px auto;
+    background-color: antiquewhite;
+    border-radius: 70px;
+    padding: 20px;
+}
+.comprar p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 0px -3px 5px rgb(0,0,0,0.3);
+}
+footer p {
+  margin: 0;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px){
+section{
+  flex-direction: column;
+  align-items: center;
+}
+.sobre-nos{
+  flex-direction: column-reverse;
+}
+.inicio div, .inicio img, .inicio button, .inicio p {
+  margin: auto;
+  text-align: center;
+}
+.sobre-nos h2{
+  margin: 25px auto ;
+  text-align: center;
+}
+.sobrenos_section .card-group{
+  flex-direction: column
+}
+.inicio div {
+  align-items: center;
+}
+}
+
+@media screen and (max-width: 992px){
+  main{
+    width: 90%;
+  }
+
+}
+@media screen and (max-width: 768px){
+  main{
+    width: 97%;
+  }
+}
+@media screen and (max-width: 576px){
+  main{
+    width: 100%;
+    border-radius: 0;
+  }
+  .comprar h2{
+    font-size: 36px;
+  }
+  .comprar div {
+    min-height: 300px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 416px){
+  section.inicio, section.sobre-nos, section.comprar{
+    margin: 20px;
+  }
+}
